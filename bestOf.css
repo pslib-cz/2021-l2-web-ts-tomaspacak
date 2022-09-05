@@ -1,0 +1,155 @@
+
+
+
+:root {
+    --bg:#20242A;
+    --title:white;
+    --text:#BBBBBB;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--bg);
+    
+    
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    color: var(--title);
+    text-align: center;
+    margin: 1em 0 2em 0;
+}
+.header__title {
+    margin-bottom: 0.25em;
+    font-size: 1.4em;
+}
+
+
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*width: 100vw;*/
+    flex-basis: 100%;
+    /*height: auto;*/
+    margin: 0;
+    
+}
+.foto__odkaz {
+    display: flex;
+    margin: 0;
+   /* height: 100%;*/
+    flex-grow: 1;
+    
+}
+.foto__img {
+ width: 100%;
+ border-bottom: 0.5em solid white;
+ border-top: 0.5em solid white;
+}
+
+
+
+.bestOf__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    /*width: 100%;*/
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.text__title {
+    color: var(--title);
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+.text__description {
+    font-size: 1em;
+    margin-top: 0.3em;
+    margin-bottom: 3em;
+    /*margin-right: 1em;*/
+    color: var(--text);
+}
+
+footer {
+    border-top: 1em solid white;
+}
+
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+    .text {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 3em;
+    }
+    .text__title {
+        font-size: 2em;
+    }
+    .text__description {
+        font-size: 1.2em;
+    }
+
+    .foto {
+        width: 90%;
+        
+        border-left: 0;
+    }
+    .foto__img {
+        border: solid 7px white;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    .bestOf__wrapper {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 5em;
+    }
+    .foto {
+        /*display: block;*/
+       /* flex-basis: 70%;
+        height: auto;*/
+        overflow: hidden;
+        
+    }
+    .foto__odkaz {
+        width: 100%;
+       /* height: 100%;*/
+    }
+    .foto__img {
+        flex-grow: 0;
+        width: 100%;
+        height: 100%;
+        /*border-right: 10px solid white;*/
+    }
+
+    .text {
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 50%;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .text__title {
+        font-size: 1.8em;
+        margin-top: 0em;
+    }
+    .text__description {
+        font-size: 1.3em;
+        margin-bottom: 1em;
+    }
+}

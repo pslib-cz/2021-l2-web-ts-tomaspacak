@@ -1,0 +1,351 @@
+:root {
+    --text:#BBBBBB;
+    --title: rgb(255, 255, 255);
+}
+
+
+/*   */
+html {
+    font-family: 'Lato', sans-serif;
+    color: var(--text);
+    font-size: 0.5em;
+}
+
+body {
+    margin: 0 auto;
+}
+h1, h2 {
+    font-family: 'Paytone One', sans-serif;
+    color: var(--title);
+}
+/*    */ 
+
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* HEADER */ 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Full/DSC06301.jpg);
+    background-size: cover;
+    height: 20vh;
+    margin-bottom: 1em;
+}
+.header__title {
+    font-size: 3.5em;
+    color: var(--title);
+    align-self: center;
+}
+
+
+
+
+/* MAIN - ROZCESTNÍK */
+main {
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.primaryNav {
+    display: flex;
+    flex-direction: column;
+}
+.primaryNav__kategory {
+    position: relative;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;*/
+    height: 70vw;
+}
+.primaryNav__title {
+    position: absolute;
+    font-size: 3em;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    margin-left: 0.8em;
+    top: 40%;
+    color: var(--title);
+}
+.primaryNav__description {
+    position: absolute;
+    top: 50%;
+    width: 15em;
+    font-size: 2em;
+    margin: 0;
+    margin-left: 1em;
+    
+}
+.button {
+    display: block;
+    position: absolute;
+    right: 1em;
+    bottom: 2em;
+    border: solid 1px white;
+    text-align: center;
+    width: 20vw;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+}
+.button:hover {
+    background-color: #414D5C;
+    color: rgb(255, 255, 255);
+    border: solid 3px #414D5C;
+}
+
+
+.primaryNav__kategory--serie {
+    background-image: url(../img/náhled/pacák_série_foto5_390.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.primaryNav__kategory--best{
+    background-image: url(../img/náhled/16_pacák_390.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.primaryNav__kategory--tematicka{
+    background-image: url(../img/náhled/pacák_téma_nekonekonečno2_390.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.primaryNav__kategory--galerie{
+    background-image: url(../img/náhled/DSC05538_390.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   
+
+
+
+/* O SEMINARI */
+
+.oSeminari {
+    background-color: #20242A;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+.oSeminari__container {
+    display: flex;
+    flex-direction: column;
+}
+.oSeminari__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    margin-left: 2em;
+    margin-right: 2em;
+    
+    
+}
+.oSeminari__text {
+    margin-right: 2em;
+}
+.oSeminari__title {
+    margin-bottom: 1em;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+.oSeminari__underTitle {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: var(--title);
+    
+}
+.oSeminari__decription {
+    margin-top: 0em;
+    font-size: 2em;
+}
+.oSeminari__text {
+    
+    margin-top: 0em;
+   
+}
+
+/* fotky */
+.oSeminari__imgContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+    margin-bottom: 5em;
+    margin-right: 5em;
+  
+}
+.imgContainer__img {
+   
+    flex-basis: 40%;
+    width: 48%;
+}
+
+
+
+
+/*  FOOTER */
+
+
+.footer__description {
+    align-self: flex-start;
+}
+/*.footer__description--small {
+    font-size: 6px;
+}*/
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+ 
+    .header {
+        height: 30vh;
+    }
+    .header__title {
+        font-size: 4.5em;
+    }
+
+    .primaryNav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .primaryNav__kategory {
+        flex-basis: 50%;
+        font-size: 1em;
+        height: 30vw;
+    }
+    .primaryNav__title {
+        top: 10vw;
+    }
+    .primaryNav__description {
+        top: 14vw;
+    }
+    .button {
+        width: 5em;
+    }
+
+    .oSeminari__wrapper {
+        flex-direction: row;
+        margin-right: 0em;
+    }
+    .oSeminari__text {
+        display: flex;
+        flex-direction: column;
+        /*flex-grow: 1;*/
+        flex-basis: 80%;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .oSeminari__imgContainer {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        margin-right: 0;
+        margin-left: 1em;
+        flex-grow: 1;
+        gap: 2em;
+        flex-basis: 10%;
+        justify-content: space-between;
+    }
+
+    .imgContainer__img {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        height: 33vh;
+    }
+    .header__title {
+        font-size: 5em;
+    }
+
+    .primaryNav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .primaryNav__kategory {
+        flex-basis: 50%;
+        font-size: 1em;
+        height: 30vw;
+    }
+    .primaryNav__title {
+        top: 11.5vw;
+    }
+    .primaryNav__title {
+        top: 10vw;
+    }
+    .primaryNav__description {
+        top: 14vw;
+    }
+    .button {
+        width: 5em;
+    }
+
+
+    .oSeminari__title {
+        font-size: 4.5em;
+        padding-bottom: 1em;
+    }
+    .oSeminari__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 1em;
+    }
+    .oSeminari__imgContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: 1em;
+        margin-right: 0em;
+        flex-basis: 48%;
+        flex-grow: 1;
+        height: 100%;
+        gap: 1em;
+        align-self: center;
+
+    }
+    .imgContainer__img {
+        width: 0;
+       flex-basis: 49%;
+      
+    }
+    .oSeminari__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        flex-basis: 50%;
+        flex-grow: 1;
+        font-size: 1em;
+
+        
+    }
+
+    .button {
+        right: 1em;
+        bottom: 2em;
+        border: solid 1px white;
+        text-align: center;
+        width: 7vw;
+        padding-top: 0.15em;
+        padding-bottom: 0.15em;
+
+    }
+}

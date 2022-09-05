@@ -1,0 +1,231 @@
+
+
+
+.tematicka {
+    background-color:#20242A;
+    padding-top: 2em;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2em;
+}
+.header__title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.nekonecno {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    background-color:#20242A;
+}
+.krehkaKrasa {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    background-color:#414D5C;
+}
+.svetBezBarev {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    background-color:#20242A;
+}
+
+.nekonecno__text {
+    margin-left: 1em;
+    margin-top: 0;
+    width: 90%;
+}
+.krehkaKrasa__text {
+    margin-left: 1em;
+    margin-top: 0;
+    width: 90%;
+}
+.svetBezBarev__text {
+    margin-left: 1em;
+    margin-top: 0;
+    width: 90%;
+}
+
+.nekonecno__title {
+    margin-bottom: 0.5em;
+}
+.krehkaKrasa__title {
+    margin-bottom: 0.5em;
+}
+.svetBezBarev__title {
+    margin-bottom: 0.5em;
+}
+
+.nekonecno__description {
+    margin: 0;
+}
+.krehkaKrasa__description {
+    margin-top: 0;
+}
+.svetBezBarev__description {
+    margin-top: 0;
+}
+
+.nekonecno__img {
+    border-top:  5px solid white;
+    border-bottom: 5px solid white;
+}
+.krehkaKrasa__img {
+    border-top:  5px solid white;
+    border-bottom: 5px solid white;
+}
+.svetBezBarev__img {
+    border-top:  5px solid white;
+    border-bottom: 5px solid white;
+}
+
+
+
+
+@media only screen and (min-width: 700px) {
+    .header__title {
+        font-size: 2.3em;
+    }
+
+    .nekonecno__odkaz {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: -3.5em;
+    }
+    .nekonecno__img {
+        width: 62vw;
+        border-left: 10px solid white;
+    }
+    .nekonecno__title {
+        font-size: 2em;
+    }
+    .nekonecno__description {
+        font-size: 1.5em;
+    }
+    /*.header__title {
+        font-size: 2.3em;
+    }*/
+
+    .krehkaKrasa__odkaz {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: -3.5em;
+    }
+    .krehkaKrasa__img {
+        width: 62vw;
+        border-left: 10px solid white;
+    }
+    .krehkaKrasa__title {
+        font-size: 2em;
+    }
+    .krehkaKrasa__description {
+        font-size: 1.5em;
+    }
+
+    .svetBezBarev__odkaz {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: -3.5em;
+    }
+    .svetBezBarev__img {
+        width: 62vw;
+        border-left: 10px solid white;
+    }
+    .svetBezBarev__title {
+        font-size: 2em;
+    }
+    .svetBezBarev__description {
+        font-size: 1.5em;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    .header {
+        margin-bottom: 3em;
+    }
+    .header__title {
+        font-size: 3.5em;
+    }
+
+    .nekonecno {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nekonecno__odkaz {
+       /* flex-basis: 55%;
+        height: 28em;*/
+        order: 2;
+        margin-bottom: 0;
+        margin-right: 1em;
+        justify-content: center;
+        border: 10px solid white;
+    }
+    .nekonecno__text {
+        flex-basis: 50%;
+        margin-left: 2em;
+        margin-right: 4em;
+    }
+    .nekonecno__description {
+        font-size: 1.3em;
+    }
+    .nekonecno__img {
+        width: 100%;
+        border: 0;
+    }
+    .krehkaKrasa {
+        display: flex;
+        justify-content: space-between;
+    }
+    .krehkaKrasa__odkaz {
+        /*flex-basis: 55%;
+        height: 28em;*/
+        order: -1;
+        margin-bottom: 0;
+        margin-right: 1em;
+        justify-content: center;
+        border: 10px solid white;
+        margin-left: 1em;
+    }
+    .krehkaKrasa__text {
+        flex-basis: 50%;
+        margin-left: 2em;
+        margin-right: 4em;
+    }
+    .krehkaKrasa__description {
+        font-size: 1.3em;
+    }
+    .krehkaKrasa__img {
+        width: 100%;
+        border: 0;
+    }
+    .svetBezBarev {
+        display: flex;
+        justify-content: space-between;
+    }
+    .svetBezBarev__odkaz {
+        /*flex-basis: 55%;
+        height: 28em;*/
+        order: 1;
+        margin-bottom: 0;
+        margin-right: 1em;
+        justify-content: center;
+        border: 10px solid white;
+    }
+    .svetBezBarev__text {
+        flex-basis: 50%;
+        margin-left: 2em;
+        margin-right: 4em;
+    }
+    .svetBezBarev__description {
+        font-size: 1.3em;
+    }
+    .svetBezBarev__img {
+        width: 100%;
+        border: 0;
+    }
+}

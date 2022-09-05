@@ -1,0 +1,225 @@
+
+:root {
+    --text:#BBBBBB;
+    --title: rgb(255, 255, 255);
+    --bg:#20242A;
+    --bg2:#414D5C;
+    --bg-footer:#47474D;
+    --text-footer:#959393;
+    
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    color: var(--text);
+    position: relative;
+}
+body {
+    margin: 0 auto;
+}
+h1, h2 {
+    font-family: 'Paytone One', sans-serif;
+    color: var(--title);
+}
+h3 {
+    color: var(--title);
+}
+
+/* NAVIGACE */ 
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+    gap: 1.5vw;
+    position: absolute;
+    right: 2vw;
+    top: 0;
+    margin-top: 0;
+    list-style-type: none;
+}
+.nav__icon {
+    width: 8vw;
+    height: 8vw;
+    border: 3px solid #47474D;
+    border-radius: 0 0 10px 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #47474D;
+    
+}
+.nav__icon:hover {
+    padding-top: 1vw;
+    background-position: 5%;
+   
+}
+.nav__icon--home {
+    background-image: url(/img/icons8-home.svg);
+}
+.nav__icon--instagram {
+    background-image: url(/img/icons8-instagram.svg);
+}
+.nav__icon--pslib {
+    background-image: url(/img/pslib_icon.svg);
+}
+
+
+
+/* HEADER */
+.header__underTitleLine {
+    display: block;
+    width: 92vw;
+    height: 0.1em;
+    background-color: var(--title);
+}
+
+/* nav2 */
+.secNav {
+    width: 90%;
+    align-self: center;
+    text-align: center;
+}
+.secNav__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 90%;
+    align-self: center;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 1em;
+    margin-top: 0.4em;
+}
+.secNav__odkaz {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+   /* margin-top: 0.4em;*/
+}
+.secNav__odkaz:hover {
+
+}
+
+
+/*  FOOTER */
+
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: var(--bg-footer);
+    color: var(--text-footer);
+    font-size: 8px;
+    border-top: 5px solid white;
+}
+.footer__kategory {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    align-items: flex-start;
+    margin: 1em;
+}
+
+.kategory__title {
+    color: var(--text);
+    font-size: 10px;
+    margin-bottom: 0;
+    align-self: center;
+}
+.kategory__description--small {
+    font-size: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+}
+.kategory__description {
+    font-size: 1em;
+}
+.footer__kategory--center {
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__line {
+    display: inline-block;
+    height: 12em;
+    width: 1px;
+    background-color: aliceblue;
+    align-self: center;
+}
+.footer__instagramLogo::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    color: var(--text-footer);
+    background-position: center;
+    background-size: contain;
+    margin-right: 0.3em;
+    margin-bottom: -0.2em;
+    background-image: url(/img/instagram.svg);
+    background-repeat: no-repeat;
+   
+}
+
+
+@media only screen and (min-width: 700px) {
+    .nav {
+        width: 20vw;
+        gap: 0.8vw;
+        right: 2vw;
+        top: 0;
+        margin-top: 0;
+    }
+     .nav__icon {
+        width: 6vw;
+        height: 6vw;
+        border: 3px solid #47474D;
+        border-radius: 0 0 10px 10px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+}
+@media only screen and (min-width: 1000px) {
+
+    .nav {
+        width: 15vw;
+        gap: 0.5vw;
+        right: 2vw;
+        top: 0;
+        margin-top: 0;
+    }
+    .nav__icon {
+        width: 4vw;
+        height: 4vw;
+        border: 3px solid #47474D;
+        border-radius: 0 0 10px 10px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .nav__icon:hover {
+        padding-top: 0.5vw;
+        background-position: 5%;
+    }
+
+ 
+    .kategory__title{
+        font-size: 1.8em;
+    }
+    .kategory__description {
+        font-size: 1.5em;
+    }
+    .kategory__description--small {
+        font-size: 1.4em;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
